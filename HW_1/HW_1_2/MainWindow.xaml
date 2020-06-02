@@ -1,0 +1,49 @@
+﻿<Window x:Class="Lesson_1_1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lesson_1_1"
+        mc:Ignorable="d"
+        Title="Calculator" Height="600" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <TextBox x:Name="textBox_1" Grid.Column="0" Grid.ColumnSpan="4"
+Grid.Row="0" IsEnabled="False" FontSize="14" TextAlignment="Right"></TextBox>
+        <TextBox x:Name="textBox_2" Grid.Column="0" Grid.ColumnSpan="4"
+Grid.Row="1" IsEnabled="False" FontSize="36" TextAlignment="Right" CaretBrush="Black"/>
+        <Button x:Name="btn_1_1" Grid.Column="0" Grid.Row="2" FontSize="36" Click="btn_1_1_Click">CE</Button>
+        <Button x:Name="btn_1_2" Grid.Column="1" Grid.Row="2" FontSize="36" Click="btn_1_2_Click">C</Button>
+        <Button x:Name="btn_1_3" Grid.Column="2" Grid.Row="2" FontSize="36" Content="&lt;" Click="btn_1_3_Click"> </Button>
+        <Button x:Name="btn_1_4" Grid.Column="3" Grid.Row="2" FontSize="36" Click="btn_1_4_Click">/</Button>
+        <Button x:Name="btn_2_1" Grid.Column="0" Grid.Row="3" FontSize="36" Click="btn_2_1_Click">7</Button>
+        <Button x:Name="btn_2_2" Grid.Column="1" Grid.Row="3" FontSize="36" Click="btn_2_2_Click">8</Button>
+        <Button x:Name="btn_2_3" Grid.Column="2" Grid.Row="3" FontSize="36" Click="btn_2_3_Click">9</Button>
+        <Button x:Name="btn_2_4" Grid.Column="3" Grid.Row="3" FontSize="36" Click="btn_2_4_Click">*</Button>
+        <Button x:Name="btn_3_1" Grid.Column="0" Grid.Row="4" FontSize="36" Click="btn_3_1_Click">4</Button>
+        <Button x:Name="btn_3_2" Grid.Column="1" Grid.Row="4" FontSize="36" Click="btn_3_2_Click">5</Button>
+        <Button x:Name="btn_3_3" Grid.Column="2" Grid.Row="4" FontSize="36" Click="btn_3_3_Click">6</Button>
+        <Button x:Name="btn_3_4" Grid.Column="3" Grid.Row="4" FontSize="36" Click="btn_3_4_Click">-</Button>
+        <Button x:Name="btn_4_1" Grid.Column="0" Grid.Row="5" FontSize="36" Click="btn_4_1_Click">1</Button>
+        <Button x:Name="btn_4_2" Grid.Column="1" Grid.Row="5" FontSize="36" Click="btn_4_2_Click">2</Button>
+        <Button x:Name="btn_4_3" Grid.Column="2" Grid.Row="5" FontSize="36" Click="btn_4_3_Click">3</Button>
+        <Button x:Name="btn_4_4" Grid.Column="3" Grid.Row="5" FontSize="36" Click="btn_4_4_Click">+</Button>
+        <Button x:Name="btn_5_1" Grid.Column="0" Grid.Row="6" FontSize="36" Click="btn_5_1_Click">.</Button>
+        <Button x:Name="btn_5_2" Grid.Column="1" Grid.Row="6" FontSize="36" Click="btn_5_2_Click">0</Button>
+        <Button x:Name="btn_5_3" Grid.Column="2" Grid.ColumnSpan="2" Grid.Row="6" FontSize="36" Click="btn_5_3_Click">=</Button>
+        </Grid>
+</Window>
